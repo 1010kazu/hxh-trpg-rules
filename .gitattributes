@@ -1,0 +1,5 @@
+* text=auto
+*.md text eol=lf whitespace=-blank-at-eol,cr-at-eol
+*.py text eol=lf
+# 添付原文は改行コードを含めてそのまま保存する。
+sources/ver-0.2.md -text whitespace=-blank-at-eol,cr-at-eol
