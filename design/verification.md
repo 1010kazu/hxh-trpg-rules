@@ -112,3 +112,5 @@ GitHub Pages作成APIは利用プランによりHTTP 422で拒否された。ユ
 ユーザーの明示指示によりリポジトリを公開へ変更し、GitHub Pagesの作成に成功。配信元 `workflow`、一般公開 `public: true`、HTTPS強制 `https_enforced: true`、公開URL `https://1010kazu.github.io/hxh-trpg-rules/` を確認し、`PAGES_ENABLED=true` を設定した。以前の公開保留はこの指示で解除された。
 
 公開前に原文・参照・数値検証、回帰テスト25件、サイトテスト8件、19ページのビルドと生成HTMLのリンク・アンカー検証を再実施してすべて合格。表示やルール処理は変更せず、公開状態に関する運用資料を更新した。デプロイと通常CIの結果は各コミットのGitHub Actions実行履歴で確認する。
+
+公開実行 [39046744116](https://github.com/1010kazu/hxh-trpg-rules/actions/runs/39046744116) と通常CI [39046744108](https://github.com/1010kazu/hxh-trpg-rules/actions/runs/39046744108) の成功を確認。公開URLのトップ・念の章・GMシナリオ・権利表記・検索データを認証なしで取得し、すべてHTTP 200。検索データは19ページで、制作資料・原文を含まないことを確認した。公開サイトをChromiumでPC・スマートフォン幅で開き、検索・GM検索切替・章移動・アンカー・注意表示・横幅・JavaScript例外なしを確認した。
