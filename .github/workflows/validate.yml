@@ -24,3 +24,9 @@ jobs:
         run: python3 scripts/validate.py
       - name: Run validator regression tests
         run: python3 -m unittest discover -s tests -v
+      - name: Install reading site dependency
+        run: python3 -m pip install -r web/requirements.txt
+      - name: Test reading site and publication scope
+        run: python3 -m unittest discover -s tests/site -v
+      - name: Build and verify reading site
+        run: python3 scripts/build_site.py --output "${{ runner.temp }}/rulebook-site"

@@ -7,3 +7,7 @@ __pycache__/
 .codex/
 .agents/
 .DS_Store
+
+# 閲覧サイトの生成物・ローカル環境
+_site/
+.venv/

@@ -4,6 +4,23 @@
 
 原作の世界を舞台に、念能力を自分で設計して遊ぶ非公式TRPG。念を習得済みの人物となり、依頼・探索・調査・交渉・戦闘に挑む。原作既読・TRPG初心者を対象としている。実卓でのバランス検証は未実施。
 
+## ブラウザで読む（公開保留）
+
+章メニュー・ページ内目次・検索・スマートフォン表示・印刷に対応した閲覧サイトを用意しています。ルール本文・プレイ資料・GM用シナリオ・権利表記の19ページを掲載対象とし、制作資料・AI試遊記録・保存原文は掲載しません。公開はユーザーの指定により保留中です。
+
+ローカルで読むには、リポジトリのルートで次を実行してください。
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r web/requirements.txt
+.venv/bin/python scripts/build_site.py
+.venv/bin/python -m http.server 8000 --bind 127.0.0.1 --directory _site
+```
+
+ブラウザで `http://127.0.0.1:8000/` を開きます。終了はターミナルでCtrl+C。再ビルド時は生成物のみの `_site` フォルダを削除するか、`--output` で別の空フォルダを指定してください。HTMLを直接開く場合は検索データを取得できないことがあるため、上のローカルサーバーを使用します。
+
+サイトの構成は [web/site.json](web/site.json)、生成は [scripts/build_site.py](scripts/build_site.py)、更新・今後の公開は[運用ガイド](design/workflow.md)を参照してください。
+
 ## はじめて遊ぶ
 
 1. [はじめに](rules/01-introduction.md)でGM・プレイヤーの役割を知る。
@@ -32,6 +49,10 @@
 - [キャラクターシート](play/character-sheet.md)／[発の設計シート](play/hatsu-sheet.md)
 - [サンプルPCと発](play/sample-characters.md)
 - [早見表](play/quick-reference.md)／[用語集](play/glossary.md)
+
+## 二次創作・権利について
+
+本作は、冨樫義博先生の『HUNTER×HUNTER』（集英社）を題材とする非公式の二次創作TRPGです。原作者・出版社などの公式関係者とは関係がなく、原作に関する権利は各権利者に帰属します。原作と公式活動を尊重し、本作に関する公式窓口へのお問い合わせはお控えください。詳しくは[二次創作・権利に関する方針](NOTICE.md)をご覧ください。
 
 ## 制作・管理
 

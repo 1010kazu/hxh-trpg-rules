@@ -1,0 +1,112 @@
+{
+  "title": "HUNTER×HUNTER TRPG",
+  "version": "Ver.0.2 / 試遊用",
+  "pages": [
+    {
+      "source": "web/index.md",
+      "title": "この本について",
+      "group": "はじめる"
+    },
+    {
+      "source": "rules/01-introduction.md",
+      "title": "はじめに",
+      "group": "ルールブック",
+      "number": "01"
+    },
+    {
+      "source": "rules/02-checks.md",
+      "title": "基本判定",
+      "group": "ルールブック",
+      "number": "02"
+    },
+    {
+      "source": "rules/03-character-creation.md",
+      "title": "キャラクター作成",
+      "group": "ルールブック",
+      "number": "03"
+    },
+    {
+      "source": "rules/04-nen.md",
+      "title": "念",
+      "group": "ルールブック",
+      "number": "04"
+    },
+    {
+      "source": "rules/05-hatsu.md",
+      "title": "発の作成",
+      "group": "ルールブック",
+      "number": "05"
+    },
+    {
+      "source": "rules/06-adventure.md",
+      "title": "探索・調査・交渉",
+      "group": "ルールブック",
+      "number": "06"
+    },
+    {
+      "source": "rules/07-combat.md",
+      "title": "戦闘",
+      "group": "ルールブック",
+      "number": "07"
+    },
+    {
+      "source": "rules/08-equipment-and-recovery.md",
+      "title": "装備・負傷・回復",
+      "group": "ルールブック",
+      "number": "08"
+    },
+    {
+      "source": "rules/09-advancement.md",
+      "title": "成長",
+      "group": "ルールブック",
+      "number": "09"
+    },
+    {
+      "source": "rules/10-gm-guide.md",
+      "title": "GMガイド",
+      "group": "ルールブック",
+      "number": "10"
+    },
+    {
+      "source": "play/quick-reference.md",
+      "title": "早見表",
+      "group": "プレイ用資料"
+    },
+    {
+      "source": "play/glossary.md",
+      "title": "用語集",
+      "group": "プレイ用資料"
+    },
+    {
+      "source": "play/sample-characters.md",
+      "title": "サンプルPCと発",
+      "group": "プレイ用資料"
+    },
+    {
+      "source": "play/character-sheet.md",
+      "title": "キャラクターシート",
+      "group": "プレイ用資料"
+    },
+    {
+      "source": "play/hatsu-sheet.md",
+      "title": "発の設計シート",
+      "group": "プレイ用資料"
+    },
+    {
+      "source": "scenarios/01-missing-cargo-player.md",
+      "title": "消えた医療便：導入",
+      "group": "シナリオ"
+    },
+    {
+      "source": "scenarios/01-missing-cargo-gm.md",
+      "title": "消えた医療便：GM用",
+      "group": "シナリオ",
+      "gm": true
+    },
+    {
+      "source": "NOTICE.md",
+      "title": "二次創作・権利の方針",
+      "group": "このサイトについて"
+    }
+  ]
+}
