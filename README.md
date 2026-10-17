@@ -4,9 +4,11 @@
 
 原作の世界を舞台に、念能力を自分で設計して遊ぶ非公式TRPG。念を習得済みの人物となり、依頼・探索・調査・交渉・戦闘に挑む。原作既読・TRPG初心者を対象としている。実卓でのバランス検証は未実施。
 
-## ブラウザで読む（公開保留）
+## ブラウザで読む
 
-章メニュー・ページ内目次・検索・スマートフォン表示・印刷に対応した閲覧サイトを用意しています。ルール本文・プレイ資料・GM用シナリオ・権利表記の19ページを掲載対象とし、制作資料・AI試遊記録・保存原文は掲載しません。公開はユーザーの指定により保留中です。
+**[公開ルールブックを読む](https://1010kazu.github.io/hxh-trpg-rules/)**
+
+章メニュー・ページ内目次・検索・スマートフォン表示・印刷に対応した閲覧サイトを用意しています。ルール本文・プレイ資料・GM用シナリオ・権利表記の19ページを掲載対象とし、制作資料・AI試遊記録・保存原文は掲載しません。GitHub Pagesで公開し、mainへの更新時に検証・再公開します。
 
 ローカルで読むには、リポジトリのルートで次を実行してください。
 
@@ -19,7 +21,7 @@ python3 -m venv .venv
 
 ブラウザで `http://127.0.0.1:8000/` を開きます。終了はターミナルでCtrl+C。再ビルド時は生成物のみの `_site` フォルダを削除するか、`--output` で別の空フォルダを指定してください。HTMLを直接開く場合は検索データを取得できないことがあるため、上のローカルサーバーを使用します。
 
-サイトの構成は [web/site.json](web/site.json)、生成は [scripts/build_site.py](scripts/build_site.py)、更新・今後の公開は[運用ガイド](design/workflow.md)を参照してください。
+サイトの構成は [web/site.json](web/site.json)、生成は [scripts/build_site.py](scripts/build_site.py)、更新・公開の運用は[運用ガイド](design/workflow.md)を参照してください。
 
 ## はじめて遊ぶ
 
@@ -60,4 +62,4 @@ python3 -m venv .venv
 
 [制作規約](AGENTS.md)／[制作スキル](skills/hxh-rulebook/SKILL.md)／[暫定補足台帳](design/supplements.md)／[調整課題](design/open-questions.md)／[変更履歴](design/changelog.md)／[検証記録](design/verification.md)／[AI試遊記録・GM用の秘密あり](design/playtests/2026-10-18-ver-0.2-baseline.md)／[更新・検証・保存の手順](design/workflow.md)
 
-検証コマンド：`python3 scripts/validate.py`、回帰テスト：`python3 -m unittest discover -s tests -v`（Python 3.8以上・標準ライブラリのみ）。GitHub Actionsでも検証する。ルール改訂時はAIが境界ケースと導入シナリオを試遊し、結果を記録する。保存先は [1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)、非公開、既定ブランチ `main`。今後の更新は検証後にコミット・pushし、同期を確認する。
+検証コマンド：`python3 scripts/validate.py`、回帰テスト：`python3 -m unittest discover -s tests -v`（Python 3.8以上・標準ライブラリのみ）。GitHub Actionsでも検証する。ルール改訂時はAIが境界ケースと導入シナリオを試遊し、結果を記録する。保存先は [1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)、公開リポジトリ、既定ブランチ `main`。今後の更新は検証後にコミット・pushし、同期を確認する。

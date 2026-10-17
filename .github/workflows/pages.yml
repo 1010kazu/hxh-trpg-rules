@@ -5,8 +5,8 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# 公開保留中。利用プランとPages設定を確認し、公開が許可された場合だけ
-# Repository variable PAGES_ENABLED=true を設定する。
+# 公開運用：Repository variable PAGES_ENABLED=true でmain更新を配信する。
+# 公開範囲はweb/site.jsonに明示したページのみ。
 permissions:
   contents: read
 

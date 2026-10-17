@@ -1,6 +1,6 @@
 # ルールブックの更新・検証・保存
 
-保存先：[1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)。非公開、既定ブランチ `main`、リモート名 `origin`。すでに連携済みのため、Git初期化・リポジトリ作成は不要。
+保存先：[1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)。公開リポジトリ、既定ブランチ `main`、リモート名 `origin`。すでに連携済みのため、Git初期化・リポジトリ作成は不要。
 
 ## 更新を始める
 
@@ -72,21 +72,23 @@ git commit -m "docs: clarify opposed check rules"
 
 サイトの変更では8件のサイトテスト、必要なブラウザ操作確認も実施する。本文の表示形式だけを変え、ルールの処理を変えない場合はAI模擬試遊の再実施は不要。掲載内容と機械検証だけでは確認できない日本語の読みやすさも確認する。
 
-## GitHub Pagesの公開状態
+## GitHub Pagesの公開運用
 
-**現在は公開保留。** ユーザーの指定により一般公開していない。GitHubは現在のアカウントプランでは非公開リポジトリからのPages作成を拒否した（HTTP 422）。元のリポジトリを公開へ変更したり、別の公開リポジトリを作ったりしない。
+公開サイト：[HUNTER×HUNTER TRPG](https://1010kazu.github.io/hxh-trpg-rules/)。ユーザーの指示により元のリポジトリを公開へ変更し、Pagesの配信元をGitHub Actionsに設定した。`PAGES_ENABLED=true` で [公開ワークフロー](../.github/workflows/pages.yml)が有効。mainへのpush時に検証・ビルド・再公開する。
 
-[公開ワークフロー](../.github/workflows/pages.yml)は準備済みだが、`PAGES_ENABLED` が未設定のためビルド・公開ジョブはスキップされる。通常の検証ワークフローは有効であり、push時にサイトのテストとビルドまで確認する。
+GitHubのリポジトリでは制作資料・試遊記録・保存原文も閲覧できるが、Pagesには `web/site.json` の19ページだけを掲載する。この区別は今後の更新でも維持する。権利表記は [NOTICE](../NOTICE.md)を正本とする。
 
-将来ユーザーが公開を再開するときは、利用可能なGitHubプラン、一般公開する範囲、リポジトリが引き続き非公開であることを確認する。現在の非公開リポジトリからの公開を利用できる状態になった場合、承認された作業としてPagesの配信元をGitHub Actionsに設定してから、`PAGES_ENABLED=true` を設定し、公開ワークフローを手動実行する。初回成功後はmain更新時に再公開する構成。
+保存後は通常の検証に加え、公開ワークフローの対象コミットが成功したことを確認し、サイトのトップ・章・検索データを取得できること、権利表記とGM資料の注意が表示されることを確認する。
 
 ```bash
-gh api --method POST repos/1010kazu/hxh-trpg-rules/pages -f build_type=workflow
-gh variable set PAGES_ENABLED --body true
-gh workflow run pages.yml --ref main
+gh run list --workflow pages.yml --commit "$(git rev-parse HEAD)"
+gh run watch RUN_ID --exit-status
+gh api repos/1010kazu/hxh-trpg-rules/pages --jq '{html_url,public,build_type,https_enforced}'
 ```
 
-上記は**公開再開が指示されたときのみ**実行する。Pagesが既に設定されていれば状態を読み、再作成せずに必要な設定だけを更新する。デプロイの成功と返されたURLでの表示を確認し、公開状態をREADMEへ反映する。停止する場合は次回の公開を無効にするだけでは既存サイトは消えないため、`PAGES_ENABLED` の解除と、必要に応じてPages自体の停止を別々に扱う。
+`RUN_ID` は対象コミットの公開実行IDに置き換える。設定は `public: true`、`build_type: workflow`、`https_enforced: true` を期待する。初期化・Pages再作成は不要。必要な場合の再実行は `gh workflow run pages.yml --ref main` を使う。
+
+公開停止や公開範囲の変更はユーザーの指示に従う。`PAGES_ENABLED` の解除だけでは既存サイトは消えないため、以降のデプロイ無効化とPages自体の停止を区別する。デプロイに失敗した場合は直前の公開版と今回の未反映コミットを区別して報告する。
 
 ## AIによる模擬試遊
 
@@ -110,7 +112,7 @@ git ls-remote origin refs/heads/main
 gh repo view 1010kazu/hxh-trpg-rules --json nameWithOwner,isPrivate,defaultBranchRef
 ```
 
-ローカルHEADとリモートmainのハッシュ一致、保存先名、`isPrivate: true`、既定ブランチ `main` を確認する。今回の変更が残っていないことも確認する。他の作業者の未コミット変更がある場合は、それを残したまま区別して報告する。
+ローカルHEADとリモートmainのハッシュ一致、保存先名、`isPrivate: false`、既定ブランチ `main` を確認する。今回の変更が残っていないことも確認する。他の作業者の未コミット変更がある場合は、それを残したまま区別して報告する。
 
 このリポジトリで依頼された更新は、ユーザーから別の指定がなければ、検証・コミット・push・同期確認まで行う。報告には変更内容、検証結果、コミット、保存状況を含める。pushに失敗した場合はローカルのコミットを残し、未保存であることと原因を伝える。
 
