@@ -1,10 +1,26 @@
 # Git・GitHubへの保存
 
-保存予定：`1010kazu/hxh-trpg-rules`、非公開、既定ブランチ `main`。
+保存先：[1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)、非公開、既定ブランチ `main`。
 
 ## 現在の状態
 
-この実行環境は `.git` を書き込み禁止としており、まだGitリポジトリとして初期化できていない。GitHub CLIには1010kazuが登録されているが認証が失敗するため、外部リポジトリの有無・公開設定・push完了は確認できていない。以下はユーザーの通常の端末で実行する。作成・pushが終わるまではGitHubに保存済みとは扱わない。
+Git初期化・初回コミット・pushを完了し、保存先の `isPrivate: true` と既定ブランチ `main` を確認済み。ユーザーの設定後、制限の外で `gh api user` を実行して1010kazuの認証を確認した。通常実行ではGit管理領域とネットワークが制限されるため、この環境のGit書き込み・外部通信は承認付き実行を使用する。
+
+以下は通常の端末での確認・復旧手順。認証が有効なら再ログインは不要。同名リポジトリは作成済みなので、新規作成手順を再実行しない。
+
+## 今後の更新
+
+```bash
+python3 scripts/validate.py
+git status --short
+git add -- README.md rules play scenarios design skills scripts AGENTS.md .gitignore .gitattributes sources
+git diff --cached --check
+git diff --cached --stat
+git commit -m "docs: update rulebook"
+git push origin main
+```
+
+`git add` で登録するファイルは変更内容に合わせて絞る。保存原文は変更せず、`.gitattributes` で改行コードも含めて保持している。Markdownの行末2空白は改行記法のためGitの空白検査で許容する。
 
 ## 認証と保存先の確認
 
@@ -30,7 +46,7 @@ git init
 git symbolic-ref HEAD refs/heads/main
 git config user.name 1010kazu
 git config user.email 1010kazu@users.noreply.github.com
-git add -- .gitignore AGENTS.md README.md sources rules play scenarios design skills scripts
+git add -- .gitignore .gitattributes AGENTS.md README.md sources rules play scenarios design skills scripts
 git diff --cached --stat
 git diff --cached --check
 git commit -m "docs: add HUNTER x HUNTER TRPG playtest rulebook"

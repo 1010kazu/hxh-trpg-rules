@@ -79,4 +79,4 @@
 
 ## 制限と保存状態
 
-GitHub CLIの認証は失敗、`git init` は `.git/branches` の作成時に読み取り専用で失敗した。Git初期化・commit・pushと非公開設定の検証は未完了。[手元での手順](github-setup.md)を参照する。
+初回の通常実行ではネットワーク制限によりGitHub認証が失敗と表示され、`git init` は読み取り専用で失敗した。ユーザーの設定後に承認付きで実行し、`gh api user` が1010kazuを返すこと、Git初期化・初回コミット・pushの成功を確認した。リポジトリ情報は `1010kazu/hxh-trpg-rules`、`isPrivate: true`、既定ブランチ `main`。初回コミットは `b10a48a`。通常実行の制限は継続するため、Gitの書き込み・通信は承認付きで実行する。[保存・更新手順](github-setup.md)を参照する。

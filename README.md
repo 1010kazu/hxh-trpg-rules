@@ -39,4 +39,4 @@
 
 [制作規約](AGENTS.md)／[制作スキル](skills/hxh-rulebook/SKILL.md)／[暫定補足台帳](design/supplements.md)／[調整課題](design/open-questions.md)／[変更履歴](design/changelog.md)／[検証記録](design/verification.md)／[GitHub保存手順](design/github-setup.md)
 
-検証コマンド：`python3 scripts/validate.py`（Python 3標準ライブラリのみ）。GitHub保存予定先は `1010kazu/hxh-trpg-rules`、非公開。現環境では認証とGit書き込み権限の制約により未保存。
+検証コマンド：`python3 scripts/validate.py`（Python 3標準ライブラリのみ）。保存先は [1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)、非公開、既定ブランチ `main`。初回コミットのpushと非公開設定を確認済み。
