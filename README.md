@@ -37,6 +37,6 @@
 
 [原文Ver.0.2](sources/ver-0.2.md)を保存し、[55節の対応表](design/source-map.md)で移植先を追跡している。原文の数値は維持し、不足処理は本文の「暫定補足 Axx」に明示した。原文の暫定値・要テスト項目は引き続き暫定扱い。
 
-[制作規約](AGENTS.md)／[制作スキル](skills/hxh-rulebook/SKILL.md)／[暫定補足台帳](design/supplements.md)／[調整課題](design/open-questions.md)／[変更履歴](design/changelog.md)／[検証記録](design/verification.md)／[GitHub保存手順](design/github-setup.md)
+[制作規約](AGENTS.md)／[制作スキル](skills/hxh-rulebook/SKILL.md)／[暫定補足台帳](design/supplements.md)／[調整課題](design/open-questions.md)／[変更履歴](design/changelog.md)／[検証記録](design/verification.md)／[更新・検証・保存の手順](design/workflow.md)
 
-検証コマンド：`python3 scripts/validate.py`（Python 3標準ライブラリのみ）。保存先は [1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)、非公開、既定ブランチ `main`。初回コミットのpushと非公開設定を確認済み。
+検証コマンド：`python3 scripts/validate.py`（Python 3標準ライブラリのみ）。保存先は [1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)、非公開、既定ブランチ `main`。今後の更新は検証後にコミット・pushし、同期を確認する。
