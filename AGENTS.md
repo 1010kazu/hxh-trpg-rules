@@ -26,7 +26,11 @@
 
 ## 検証と保存
 
-編集後は `python3 scripts/validate.py`。スキル編集後は利用可能なら skill-creator の `quick_validate.py` も実行する。原文網羅、リンク、サンプル数値、例題とシナリオの流れを確認し、`design/verification.md` に実施範囲と未検証事項を残す。実卓テストと机上確認を区別する。
+編集後は `python3 scripts/validate.py`。スキル編集後は利用可能なら skill-creator の `quick_validate.py` も実行する。保存原文のハッシュ、55節の対応先、リンク、現行本文に基づくサンプル数値、例題とシナリオの流れを確認し、`design/verification.md` に実施範囲と未検証事項を残す。実卓テスト・AI模擬試遊・机上確認を区別する。回帰テストは `python3 -m unittest discover -s tests -v`。GitHub Actionsでも同じ検証とテストを実行し、push後は対象コミットの実行結果を確認する。
+
+ルールの処理・数値・発や装備の性能を変更したら、AIが変更箇所の境界ケースと導入シナリオ1回を試遊する。誤字修正・運用資料だけの変更では省略可。手順と記録形式は[運用ガイド](design/workflow.md)と[試遊テンプレート](design/playtests/template.md)を使う。行動選択・裁定・評価はAI、ツールは出目前に確定した宣言に対するダイス生成と計算補助のみ。ゲーム進行スクリプトは作らない。秘密の情報をPCへ流用しない。
+
+試遊は対象コミット・未コミット差分・出目・計算・状態変化・仮裁定・結論・未検証事項を `design/playtests/` に残す。数値や既存設計の改善案は調整課題へ記録し、合意なく採用しない。進行不能なら停止箇所を報告し、問題がないと扱わない。
 
 更新・保存の手順は [運用ガイド](design/workflow.md)を正本とする。GitHubは `1010kazu/hxh-trpg-rules` の非公開、`main`、`origin` を使う。連携済みのため初期化やリポジトリ作成を繰り返さない。
 
