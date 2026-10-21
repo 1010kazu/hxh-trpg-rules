@@ -58,6 +58,8 @@ python3 -m venv .venv
 
 ## 制作・管理
 
+[5分LT：TRPG制作 × ハーネスエンジニアリング](design/talks/lt-harness-engineering/README.md)（投影用スライド・発表原稿）。
+
 **[検討課題のIssue一覧](https://github.com/1010kazu/hxh-trpg-rules/issues)**で暫定補足・バランス調整・裁定整理を検討する。`種類:`・`分野:`・`状況:` のラベルで絞り込める。A番号は[暫定補足台帳](design/supplements.md)、Q番号とAI試遊のT番号は[調整課題](design/open-questions.md)から参照できる。議論と進捗はIssue、現行のルール定義は本文に残す。採用時はユーザーとの合意と必要な反映・検証・AI試遊を終え、見送り時は理由を残してクローズする。
 
 [原文Ver.0.2](sources/ver-0.2.md)を保存し、[55節の対応表](design/source-map.md)で移植先を追跡している。原文の数値は維持し、不足処理は本文の「暫定補足 Axx」に明示した。原文の暫定値・要テスト項目は引き続き暫定扱い。
