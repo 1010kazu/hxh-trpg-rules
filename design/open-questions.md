@@ -88,3 +88,12 @@ IDは初回試遊記録内の番号と対応する。既存ルールの変更は
 | T02 | 威嚇射撃の行動・消費・機械的効果が未定義 | シナリオに威嚇の手順を定める | [T02](https://github.com/1010kazu/hxh-trpg-rules/issues/54) |
 | T03 | 柱に貼った札と手元の札の説明が混在 | 固定物への遠隔攻撃の判定・防護・対象位置を整理 | [T03](https://github.com/1010kazu/hxh-trpg-rules/issues/55) |
 | T04 | 通常攻撃と攻撃発で、威力と消費の価値差が目立つ | 射程・用途・配分を変えた試遊で比較し、サンプルの役割を再検討 | [T04](https://github.com/1010kazu/hxh-trpg-rules/issues/56) |
+
+## Ver.0.3統合後の課題
+
+フェーズ4は [V03 #57](https://github.com/1010kazu/hxh-trpg-rules/issues/57)。採用候補24件は2026-11-23のユーザー承認により統合した。数値の要テストは継続する。
+
+- [V04-01 #58](https://github.com/1010kazu/hxh-trpg-rules/issues/58) は練・硬の致命傷頻度と後手の防御練。Q05・Q07・Q08・T04へ接続。
+- [V04-02 #59](https://github.com/1010kazu/hxh-trpg-rules/issues/59) は固定札への精密射撃と通常攻撃の用途差。T03・A18・T04へ接続。
+
+[統合試遊・GM用の秘密あり](playtests/2026-11-23-ver-0.3.md)に出目と状態を記録した。
