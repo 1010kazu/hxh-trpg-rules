@@ -103,3 +103,15 @@ IDは初回試遊記録内の番号と対応する。既存ルールの変更は
 管理は [V04 #61](https://github.com/1010kazu/hxh-trpg-rules/issues/61)、対象は #58・T03 #55・#59。手加減の上限6、練の次手番開始満了、固定物の半遮蔽目標+2をユーザー承認で反映した。
 
 [試遊・GM用の秘密あり](playtests/2026-11-23-ver-0.4.md)では手加減しても累積瀕死と救命が生じた。[Ver.0.5課題 #62](https://github.com/1010kazu/hxh-trpg-rules/issues/62)へ引き継ぐ。[次版管理 #63](https://github.com/1010kazu/hxh-trpg-rules/issues/63)と [~v0.5](https://github.com/1010kazu/hxh-trpg-rules/milestone/3)を用意した。後手の防御練への実際の被攻撃、範囲と反復・複数敵・材質ごとの横断試遊は未検証。
+
+## Ver.0.5の検討・統合と次版
+
+[管理Issue #63](https://github.com/1010kazu/hxh-trpg-rules/issues/63)の32件を2026-11-23の承認で反映。Q01〜Q02・Q13〜Q20・Q23〜Q29とT02は、記載した数値を暫定維持する採用結果を残す。選択式複合は最大強度を構築上の主効果とし、残りを半分切上。高強度は制約と使用条件・抵抗・終了を個別に合意する。机上計算とAI試遊を長期実卓のバランス確定とは扱わない。
+
+[統合試遊・GM用の秘密あり](playtests/2026-11-23-ver-0.5.md)の残課題は以下へ対応付ける。
+
+- [V06-01 #65](https://github.com/1010kazu/hxh-trpg-rules/issues/65) は通常・自動射撃の弾薬管理と継続戦。
+- [V06-02 #66](https://github.com/1010kazu/hxh-trpg-rules/issues/66) は複数敵と救命担当不在時の手加減・搬送。
+- [V06-03 #67](https://github.com/1010kazu/hxh-trpg-rules/issues/67) は複合発と容量・成長の中期的な役割差。
+
+[次版の全工程 #68](https://github.com/1010kazu/hxh-trpg-rules/issues/68)を作成後、[~v0.6](https://github.com/1010kazu/hxh-trpg-rules/milestone/4)に管理Issueと3件を紐づけた。着手時と統合前には検討待ち全件を再確認する。
