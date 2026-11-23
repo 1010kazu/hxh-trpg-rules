@@ -115,3 +115,9 @@ IDは初回試遊記録内の番号と対応する。既存ルールの変更は
 - [V06-03 #67](https://github.com/1010kazu/hxh-trpg-rules/issues/67) は複合発と容量・成長の中期的な役割差。
 
 [次版の全工程 #68](https://github.com/1010kazu/hxh-trpg-rules/issues/68)を作成後、[~v0.6](https://github.com/1010kazu/hxh-trpg-rules/milestone/4)に管理Issueと3件を紐づけた。着手時と統合前には検討待ち全件を再確認する。
+
+## Ver.0.6の採用と確認範囲
+
+[#65](https://github.com/1010kazu/hxh-trpg-rules/issues/65)は導入方式維持と連戦方式の選択追加、[#66](https://github.com/1010kazu/hxh-trpg-rules/issues/66)は数値維持と停止・救援・搬送準備、[#67](https://github.com/1010kazu/hxh-trpg-rules/issues/67)は係数維持と新系統適性を含む拡張例をユーザー承認に基づき採用。[比較記録・GM用の秘密あり](playtests/2026-11-23-ver-0.6-review.md)と[統合試遊・GM用の秘密あり](playtests/2026-11-23-ver-0.6.md)を参照。
+
+具体的な継続課題がない場合は次版を自動作成しない運用も承認済み。実卓・長期キャンペーン・全組合せは未検証であり、この限界と、実際に発見した対応課題を区別する。管理 [#68](https://github.com/1010kazu/hxh-trpg-rules/issues/68)で完了判断を記録する。
