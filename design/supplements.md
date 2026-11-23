@@ -44,3 +44,7 @@ A08の練の満了、A16の手番開始、A17〜A18の固定物の遮蔽・携�
 ## Ver.0.5の採用
 
 2026-11-23にユーザーが32件の推奨案と本文反映を承認。A01〜A04・A09・A10・A12・A15・A20〜A24を採用して現行章へ反映した。旧版で採用済みの補足も含め、表の「確認状況」は当時の記録として保持する。系統適性の表を補完し、治療・情報公開・協力・成長の処理を明文化。数値は引き続きテスト対象。管理は [#63](https://github.com/1010kazu/hxh-trpg-rules/issues/63)、実施範囲は [試遊・GM用の秘密あり](playtests/2026-11-23-ver-0.5.md)。
+
+## Ver.0.6の採用
+
+ユーザーが3案と本文反映を承認。A22の導入方式を維持し、[連戦向け銃器弾薬の選択方式](../rules/08-equipment-and-recovery.md#sustained-ammunition)を追加。A19〜A21の負傷・救命数値とA23の成長係数を維持し、GMの搬送準備と拡張時の適性・容量の確認例を補った。管理は [#68](https://github.com/1010kazu/hxh-trpg-rules/issues/68)、個別課題は [#65](https://github.com/1010kazu/hxh-trpg-rules/issues/65)・[#66](https://github.com/1010kazu/hxh-trpg-rules/issues/66)・[#67](https://github.com/1010kazu/hxh-trpg-rules/issues/67)。表の過去の確認状況は保持。統合確認は[試遊・GM用の秘密あり](playtests/2026-11-23-ver-0.6.md)に記録する。
