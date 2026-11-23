@@ -97,3 +97,9 @@ IDは初回試遊記録内の番号と対応する。既存ルールの変更は
 - [V04-02 #59](https://github.com/1010kazu/hxh-trpg-rules/issues/59) は固定札への精密射撃と通常攻撃の用途差。T03・A18・T04へ接続。
 
 [統合試遊・GM用の秘密あり](playtests/2026-11-23-ver-0.3.md)に出目と状態を記録した。
+
+## Ver.0.4と次版
+
+管理は [V04 #61](https://github.com/1010kazu/hxh-trpg-rules/issues/61)、対象は #58・T03 #55・#59。手加減の上限6、練の次手番開始満了、固定物の半遮蔽目標+2をユーザー承認で反映した。
+
+[試遊・GM用の秘密あり](playtests/2026-11-23-ver-0.4.md)では手加減しても累積瀕死と救命が生じた。[Ver.0.5課題 #62](https://github.com/1010kazu/hxh-trpg-rules/issues/62)へ引き継ぐ。[次版管理 #63](https://github.com/1010kazu/hxh-trpg-rules/issues/63)と [~v0.5](https://github.com/1010kazu/hxh-trpg-rules/milestone/3)を用意した。後手の防御練への実際の被攻撃、範囲と反復・複数敵・材質ごとの横断試遊は未検証。

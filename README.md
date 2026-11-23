@@ -1,8 +1,8 @@
 # HUNTER×HUNTER TRPG
 
-**Ver.0.3 統合版・実卓未検証（2026-11-23）**
+**Ver.0.4 統合版・実卓未検証（2026-11-23）**
 
-[Ver.0.3の通読用本文](rules/ver-0.3.md)。章別本文とプレイ資料も同じ版を参照する。
+[Ver.0.4の通読用本文](rules/ver-0.4.md)。章別本文とプレイ資料も同じ版を参照する。
 
 原作の世界を舞台に、念能力を自分で設計して遊ぶ非公式TRPG。念を習得済みの人物となり、依頼・探索・調査・交渉・戦闘に挑む。原作既読・TRPG初心者を対象としている。実卓でのバランス検証は未実施。
 
@@ -67,3 +67,5 @@ python3 -m venv .venv
 [制作規約](AGENTS.md)／[制作スキル](skills/hxh-rulebook/SKILL.md)／[暫定補足台帳](design/supplements.md)／[調整課題](design/open-questions.md)／[変更履歴](design/changelog.md)／[検証記録](design/verification.md)／[AI試遊記録・GM用の秘密あり](design/playtests/2026-10-18-ver-0.2-baseline.md)／[更新・検証・保存の手順](design/workflow.md)
 
 検証コマンド：`python3 scripts/validate.py`、回帰テスト：`python3 -m unittest discover -s tests -v`（Python 3.8以上・標準ライブラリのみ）。GitHub Actionsでも検証する。ルール改訂時はAIが境界ケースと導入シナリオを試遊し、結果を記録する。保存先は [1010kazu/hxh-trpg-rules](https://github.com/1010kazu/hxh-trpg-rules)、公開リポジトリ、既定ブランチ `main`。今後の更新は検証後にコミット・pushし、同期を確認する。
+
+バージョンごとの管理Issue・マイルストーン、検討から統合・試遊・次版への引き継ぎは[バージョン運用](design/workflow.md#version-cycle)に従う。
